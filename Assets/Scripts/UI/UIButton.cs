@@ -24,23 +24,11 @@ public class UIButton : MonoBehaviour
         b1text.text = answerChar+". "+ answerText;
     }
 
-    public void Clicked_A() 
+    public void Clicked() 
     {
-        QuestionSystem.instance.GetAnswer("A");
+        QuestionSystem.instance.GetAnswer(answerChar);
     }
 
-    public void Clicked_B()
-    {
-        QuestionSystem.instance.GetAnswer("B");
-    }
-    public void Clicked_C()
-    {
-        QuestionSystem.instance.GetAnswer("C");
-    }
-    public void Clicked_D()
-    {
-        QuestionSystem.instance.GetAnswer("D");
-    }
 
 
     public void SetAnswer(string qText)

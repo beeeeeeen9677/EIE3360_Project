@@ -49,6 +49,7 @@ public class QuestionSystem : MonoBehaviour
         else 
         {
             Debug.Log("Wrong");
+            DoorManager.instance.AnswerWrong(currentQuestionZone);
         }
     }
 

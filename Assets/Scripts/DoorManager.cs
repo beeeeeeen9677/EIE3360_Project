@@ -6,7 +6,6 @@ public class DoorManager : MonoBehaviour
 {
     public static DoorManager instance;
     public GameObject doors0;
-    public Animator door0Anim;
     public GameObject triggerZone0;
 
 
@@ -14,7 +13,6 @@ public class DoorManager : MonoBehaviour
     public void Awake()
     {
         instance = this;
-        door0Anim = doors0.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,7 +21,15 @@ public class DoorManager : MonoBehaviour
         if (QuestionNumber == 0)
         {
             Destroy(triggerZone0);
-            door0Anim.SetTrigger("Open");
+            doors0.GetComponent<Animator>().SetTrigger("Open");
+        }
+    }
+
+    public void AnswerWrong(int QuestionNumber) 
+    {
+        if (QuestionNumber == 0)
+        {
+            //
         }
     }
 }
