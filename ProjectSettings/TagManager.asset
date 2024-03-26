@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - way_point
+  - wehrmacht_a
+  - wehrmacht_b
+  - schutzstaffel_a
+  - schutzstaffel_b
+  - wehrmacht_c
   layers:
   - Default
   - TransparentFX
@@ -13,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - 
   - 
   - 
