@@ -10,6 +10,7 @@ public class QuestionSystem : MonoBehaviour
     public UIButton buttonObjB;
     public UIButton buttonObjC;
     public UIButton buttonObjD;
+    private List<UIButton> buttons = new List<UIButton>();
 
 
     public static QuestionSystem instance;
@@ -33,24 +34,45 @@ public class QuestionSystem : MonoBehaviour
         questionList.Add(Q0);
         questionList.Add(Q1);
         questionList.Add(Q2);
+        
+        buttons.Add(buttonObjA);
+        buttons.Add(buttonObjB);
+        buttons.Add(buttonObjC);
+        buttons.Add(buttonObjD);
+
         UI = GameObject.Find("UI");
         UI.SetActive(false);
     }
 
-    public void GetAnswer(string ansChar) 
+    public void GetAnswer(UIButton button) 
     {
+        string ansChar = button.answerChar;
         playerAnswer = ansChar;
         if(ansChar == correctAnswer)
         {
             Debug.Log("Correct");
             DoorManager.instance.AnswerCorrect(currentQuestionZone);
-            UI.SetActive(false);
+            UI.transform.Find("Answer").gameObject.SetActive(false);
+            StartCoroutine(AnswerCorrect(button));
+            //UI.SetActive(false);
         }
         else 
         {
             Debug.Log("Wrong");
             DoorManager.instance.AnswerWrong(currentQuestionZone);
+            button.WrongAns();
         }
+    }
+
+    IEnumerator AnswerCorrect(UIButton b)
+    {
+        ResetAllButtons();
+        questionObject.SetQuestion("Answer: "+b.answerChar+". "+b.answerText);
+        //questionObject.GreenBgColor();
+        yield return new WaitForSeconds(2);
+        //questionObject.ResetBgColor();
+        UI.SetActive(false);
+        UI.transform.Find("Answer").gameObject.SetActive(true);
     }
 
     
@@ -66,4 +88,17 @@ public class QuestionSystem : MonoBehaviour
 
         correctAnswer = questionList[currentQuestionZone][5];
     }
+
+
+    public void ResetAllButtons() 
+    {
+        foreach (UIButton button in buttons)
+        {
+            //button.gameObject.SetActive(status);
+            button.ResetButton();
+        }
+    }
+
+    
+
 }

@@ -26,9 +26,22 @@ public class UIButton : MonoBehaviour
 
     public void Clicked() 
     {
-        QuestionSystem.instance.GetAnswer(answerChar);
+        QuestionSystem.instance.GetAnswer(this);
+        
     }
 
+    public void WrongAns() 
+    {
+        //gameObject.SetActive(false);
+        b1.interactable = false;
+        b1text.color = new Color(255, 0, 0, 255);
+    }
+
+    public void ResetButton()
+    {
+        b1.interactable = true;
+        b1text.color = new Color(0, 0, 0, 255);
+    }
 
 
     public void SetAnswer(string qText)

@@ -29,7 +29,7 @@ public class DoorManager : MonoBehaviour
     {
         if (QuestionNumber == 0)
         {
-            //
+
         }
     }
 }
