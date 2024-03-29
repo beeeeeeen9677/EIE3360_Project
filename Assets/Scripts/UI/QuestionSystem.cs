@@ -11,7 +11,6 @@ public class QuestionSystem : MonoBehaviour
     public UIButton buttonObjC;
     public UIButton buttonObjD;
     private List<UIButton> buttons = new List<UIButton>();
-    public Animator HPanim;
 
 
     public static QuestionSystem instance;
@@ -23,6 +22,8 @@ public class QuestionSystem : MonoBehaviour
     private List<string> Q0 = new List<string>() { "Year of Battle of Dunkirk", "1938", "1939", "1940", "1941","C"};
     private List<string> Q1 = new List<string>() { "Sample Question 1", "Sample Answer A1", "Sample Answer B1", "Sample Answer C1", "Sample Answer D1", "B"};
     private List<string> Q2 = new List<string>() { "Sample Question 2", "Sample Answer A2", "Sample Answer B2", "Sample Answer C2", "Sample Answer D2", "D"};
+    private List<string> Q3 = new List<string>() { "Sample Question 2", "Sample Answer A2", "Sample Answer B2", "Sample Answer C2", "Sample Answer D2", "D" };
+
 
     private List<List<string>> questionList = new List<List<string>>();
     
@@ -35,7 +36,9 @@ public class QuestionSystem : MonoBehaviour
         questionList.Add(Q0);
         questionList.Add(Q1);
         questionList.Add(Q2);
-        
+        questionList.Add(Q3);
+
+
         buttons.Add(buttonObjA);
         buttons.Add(buttonObjB);
         buttons.Add(buttonObjC);
@@ -49,21 +52,22 @@ public class QuestionSystem : MonoBehaviour
     {
         string ansChar = button.answerChar;
         playerAnswer = ansChar;
-        if(ansChar == correctAnswer)
+        if(ansChar == correctAnswer)//correct
         {
             Debug.Log("Correct");
             DoorManager.instance.AnswerCorrect(currentQuestionZone);
             UI.transform.Find("Answer").gameObject.SetActive(false);
             StartCoroutine(AnswerCorrect(button));
-            HPanim.SetTrigger("Green");
+            Timer.instance.ChangeTime(10);
             //UI.SetActive(false);
         }
-        else 
+        else //wrong
         {
             Debug.Log("Wrong");
             DoorManager.instance.AnswerWrong(currentQuestionZone);
             button.WrongAns();
-            HPanim.SetTrigger("Red");
+            Timer.instance.ChangeTime(-5);
+
         }
     }
 

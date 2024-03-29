@@ -9,6 +9,10 @@ public class DoorManager : MonoBehaviour
     public GameObject triggerZone0;
     public GameObject doors1;
     public GameObject triggerZone1;
+    public GameObject doors2;
+    public GameObject triggerZone2;
+    public GameObject doors3;
+    public GameObject triggerZone3;
 
 
     // Start is called before the first frame update
@@ -30,6 +34,16 @@ public class DoorManager : MonoBehaviour
                 Destroy(triggerZone1);
                 doors1.GetComponent<Animator>().enabled = true;
                 break;
+            case 2:
+                Destroy(triggerZone2);
+                Rigidbody d2rb = doors2.GetComponent<Rigidbody>();
+                d2rb.isKinematic = false;
+                d2rb.AddForce(new Vector3(-1000, 200, 0), ForceMode.Impulse);
+                break;
+            case 3:
+                Destroy(triggerZone3);
+                doors3.GetComponent<Animator>().enabled = true;
+                break;
             default:
                 Debug.Log("No such trigger zone");
                 break;
@@ -38,10 +52,20 @@ public class DoorManager : MonoBehaviour
 
     public void AnswerWrong(int QuestionNumber) 
     {
-        if (QuestionNumber == 0)
-        {
+        Debug.Log("Wrong");
+    }
 
+
+    /*
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.K)) 
+        {
+            Rigidbody d2rb = doors2.GetComponent<Rigidbody>();
+            d2rb.isKinematic = false;
+            d2rb.AddForce(new Vector3(-1000, 200, 0), ForceMode.Impulse);
         }
     }
+    */
 }
 
