@@ -11,6 +11,7 @@ public class QuestionSystem : MonoBehaviour
     public UIButton buttonObjC;
     public UIButton buttonObjD;
     private List<UIButton> buttons = new List<UIButton>();
+    public Animator HPanim;
 
 
     public static QuestionSystem instance;
@@ -54,6 +55,7 @@ public class QuestionSystem : MonoBehaviour
             DoorManager.instance.AnswerCorrect(currentQuestionZone);
             UI.transform.Find("Answer").gameObject.SetActive(false);
             StartCoroutine(AnswerCorrect(button));
+            HPanim.SetTrigger("Green");
             //UI.SetActive(false);
         }
         else 
@@ -61,6 +63,7 @@ public class QuestionSystem : MonoBehaviour
             Debug.Log("Wrong");
             DoorManager.instance.AnswerWrong(currentQuestionZone);
             button.WrongAns();
+            HPanim.SetTrigger("Red");
         }
     }
 

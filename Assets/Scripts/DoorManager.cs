@@ -7,6 +7,8 @@ public class DoorManager : MonoBehaviour
     public static DoorManager instance;
     public GameObject doors0;
     public GameObject triggerZone0;
+    public GameObject doors1;
+    public GameObject triggerZone1;
 
 
     // Start is called before the first frame update
@@ -18,10 +20,19 @@ public class DoorManager : MonoBehaviour
     // Update is called once per frame
     public void AnswerCorrect(int QuestionNumber)
     {
-        if (QuestionNumber == 0)
+        switch(QuestionNumber) 
         {
-            Destroy(triggerZone0);
-            doors0.GetComponent<Animator>().SetTrigger("Open");
+            case 0:
+                Destroy(triggerZone0);
+                doors0.GetComponent<Animator>().SetTrigger("Open");
+                break;
+            case 1:
+                Destroy(triggerZone1);
+                doors1.GetComponent<Animator>().enabled = true;
+                break;
+            default:
+                Debug.Log("No such trigger zone");
+                break;
         }
     }
 
