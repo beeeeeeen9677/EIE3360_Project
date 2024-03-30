@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI effectText;
     private Animator anim;
-    private bool failed = false;
+    public bool failed { get; private set; } = false;
 
     private void Awake()
     {

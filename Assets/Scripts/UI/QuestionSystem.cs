@@ -46,7 +46,11 @@ public class QuestionSystem : MonoBehaviour
 
         UI = GameObject.Find("UI");
         UI.SetActive(false);
+
+        
     }
+
+    
 
     public void GetAnswer(UIButton button) 
     {

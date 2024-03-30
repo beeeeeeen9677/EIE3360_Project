@@ -8,13 +8,10 @@ public class SpherePlayerController : MonoBehaviour
 {
     private Rigidbody rb;
     public float speed;
-    public Text score;
-    public int collected;
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        collected = 0;
         speed = 30;
     }
     void FixedUpdate()
@@ -36,8 +33,23 @@ public class SpherePlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
             moveVertical = -1;
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        rb.AddForce(movement * speed);
+        Vector3 moveDirection = new Vector3(moveHorizontal, 0.0f, moveVertical).normalized;
+        //rb.AddForce(moveDirection*speed);
+
+        
+        if (moveDirection.magnitude >= 0.1f)
+        {
+            float angle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
+            float moveAngle = angle * Mathf.Deg2Rad;
+
+            //transform.position = rb.position + new Vector3(Mathf.Sin(moveAngle) * speed * Time.deltaTime, 0, Mathf.Cos(moveAngle) * speed * Time.deltaTime);
+            //rb.MovePosition(transform.position + new Vector3(Mathf.Sin(moveAngle) * speed * Time.deltaTime, 0, Mathf.Cos(moveAngle) * speed * Time.deltaTime));
+
+            rb.AddForce(new Vector3(Mathf.Sin(moveAngle) * speed, 0, Mathf.Cos(moveAngle) * speed));
+        }
+        
     }
-    
 }
+
+
+
