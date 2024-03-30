@@ -22,7 +22,7 @@ public class QuestionSystem : MonoBehaviour
     private List<string> Q0 = new List<string>() { "Year of Battle of Dunkirk", "1938", "1939", "1940", "1941","C"};
     private List<string> Q1 = new List<string>() { "Sample Question 1", "Sample Answer A1", "Sample Answer B1", "Sample Answer C1", "Sample Answer D1", "B"};
     private List<string> Q2 = new List<string>() { "Sample Question 2", "Sample Answer A2", "Sample Answer B2", "Sample Answer C2", "Sample Answer D2", "D"};
-    private List<string> Q3 = new List<string>() { "Sample Question 2", "Sample Answer A2", "Sample Answer B2", "Sample Answer C2", "Sample Answer D2", "D" };
+    private List<string> Q3 = new List<string>() { "Sample Question 3", "Sample Answer A3", "Sample Answer B3", "Sample Answer C3", "Sample Answer D3", "A" };
 
 
     private List<List<string>> questionList = new List<List<string>>();
@@ -44,7 +44,7 @@ public class QuestionSystem : MonoBehaviour
         buttons.Add(buttonObjC);
         buttons.Add(buttonObjD);
 
-        UI = GameObject.Find("UI");
+        //UI = GameObject.Find("UI");
         UI.SetActive(false);
 
         

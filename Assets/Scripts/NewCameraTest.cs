@@ -8,7 +8,7 @@ public class NewCameraTest : MonoBehaviour
     private Vector2 currentRotation;
     public GameObject player;
     private Vector3 offset;
-    public GameObject UI;
+    public GameObject buttonUI;
 
     //Sets the depth bias on the GPU. Depth bias, also called depth offset, is a setting on the GPU that determines the depth at which it draws geometry. Adjust the depth bias to force the GPU to draw geometry on top of other geometry at the same depth.
     // Start is called before the first frame update
@@ -27,7 +27,7 @@ public class NewCameraTest : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl) || UI.activeInHierarchy || Timer.instance.failed)
+        if (Input.GetKey(KeyCode.LeftControl) || buttonUI.activeInHierarchy || Timer.instance.failed || Timer.instance.cleared)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

@@ -12,13 +12,16 @@ public class SpherePlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        speed = 30;
+        speed = 500;
     }
     void FixedUpdate()
     /*Update() runs once per frame. FixedUpdate() can run once, zero, or several
     times per frame, depending on how many physics frames per second are set in the
     time settings and how fast/slow the framerate is.*/
     {
+        if(Timer.instance.cleared) 
+            return;
+
         float moveHorizontal = 0;
         float moveVertical = 0;
         moveHorizontal = Input.acceleration.x;

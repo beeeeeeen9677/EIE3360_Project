@@ -15,6 +15,8 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI effectText;
     private Animator anim;
+    [SerializeField]
+    public bool cleared { get; private set; } = false;
     public bool failed { get; private set; } = false;
 
     private void Awake()
@@ -26,8 +28,10 @@ public class Timer : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (cleared) 
+            return;    
+
         remainTime -= Time.fixedDeltaTime;
-        
 
         if (remainTime <= 0)
         {
@@ -50,5 +54,9 @@ public class Timer : MonoBehaviour
         HP_Effect.SetTrigger(triggerStr);
         anim.SetTrigger(triggerStr);
         remainTime += amount;
+    }
+    public void LevelClear() 
+    {
+        cleared = true;
     }
 }

@@ -8,7 +8,9 @@ public class CityGM : MonoBehaviour
 {
     public static CityGM instance;
     [SerializeField]
-    private Animator anim;
+    private Animator anim;//gameover
+    [SerializeField]
+    private GameObject gameClearObj;
 
     private void Awake()
     {
@@ -23,6 +25,20 @@ public class CityGM : MonoBehaviour
     {
         SceneManager.LoadScene("City");
     }
+
+    public void LevelCleared() 
+    {
+        gameClearObj.SetActive(true);
+        Timer.instance.LevelClear();
+    }
+
+    public void NextLevel() 
+    {
+        SceneManager.LoadScene(1);
+    }
+
+
+
 
 
 }
