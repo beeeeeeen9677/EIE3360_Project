@@ -11,10 +11,14 @@ public class CityGM : MonoBehaviour
     private Animator anim;//gameover
     [SerializeField]
     private GameObject gameClearObj;
+    [SerializeField]
+    // Get the index of the current scene
+    private int currentSceneIndex;
 
     private void Awake()
     {
         instance = this;
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
     public void LevelFailed()
     {
@@ -23,7 +27,8 @@ public class CityGM : MonoBehaviour
 
     public void RetryLevel()
     {
-        SceneManager.LoadScene("City");
+        // Load the current scene
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     public void LevelCleared() 
@@ -34,7 +39,7 @@ public class CityGM : MonoBehaviour
 
     public void NextLevel() 
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
 
