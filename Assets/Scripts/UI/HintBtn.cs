@@ -10,4 +10,11 @@ public class HintBtn : MonoBehaviour
     {
         hintPanel.SetActive(!hintPanel.activeInHierarchy);
     }
+    private void FixedUpdate()
+    {
+        if (CityGM.instance.cleared) 
+        {
+            transform.parent.gameObject.SetActive(false);
+        }
+    }
 }

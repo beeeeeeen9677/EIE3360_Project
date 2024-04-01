@@ -14,6 +14,7 @@ public class CityGM : MonoBehaviour
     [SerializeField]
     // Get the index of the current scene
     private int currentSceneIndex;
+    public bool cleared { get; private set; } = false;
 
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class CityGM : MonoBehaviour
     {
         gameClearObj.SetActive(true);
         Timer.instance.LevelClear();
+        cleared = true;
     }
 
     public void NextLevel() 
