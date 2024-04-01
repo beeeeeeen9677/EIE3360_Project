@@ -23,6 +23,7 @@ public class NewCameraTest : MonoBehaviour
     //every frame but after Update() method is executed. Therefore, if you want to check and control something after the Update() method finishes its job, you need to use LateUpdate() method
     {
         transform.position = player.transform.position + offset;
+        //transform.position = player.transform.position + (player.transform.forward * -offset.z) + (player.transform.right * offset.x);
     }
 
     void Update()
