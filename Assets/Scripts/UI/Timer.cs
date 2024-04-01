@@ -26,6 +26,10 @@ public class Timer : MonoBehaviour
         remainTime = 100;
     }
 
+    public float getTime() {
+        return this.remainTime;
+    }
+
     void FixedUpdate()
     {
         if (cleared) 

@@ -10,6 +10,7 @@ TagManager:
   - schutzstaffel_a
   - schutzstaffel_b
   - wehrmacht_c
+  - Enemy
   layers:
   - Default
   - TransparentFX
