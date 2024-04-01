@@ -629,7 +629,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!95 &45777789
 Animator:
@@ -14829,6 +14829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 80788324}
   gameClearObj: {fileID: 1013868391}
+  currentSceneIndex: 0
 --- !u!114 &1417252500
 MonoBehaviour:
   m_ObjectHideFlags: 0
