@@ -51,8 +51,8 @@ public class EnemySight : MonoBehaviour
             // By default the player is not in sight.
             playerInSight = false;
 
-
-            // Create a vector from the enemy to the player and store the angle between it and forward.
+            
+	// Create a vector from the enemy to the player and store the angle between it and forward.
             Vector3 direction = other.transform.position - transform.position;
             float angle = Vector3.Angle(direction, transform.forward);
 
@@ -112,10 +112,10 @@ public class EnemySight : MonoBehaviour
         // The last point is the target position.
         allWayPoints[allWayPoints.Length - 1] = targetPosition;
 
+        
 
 
-
-        // The points inbetween are the corners of the path.
+      // The points inbetween are the corners of the path.
         for (int i = 0; i < path.corners.Length; i++)
         {
             allWayPoints[i + 1] = path.corners[i];
