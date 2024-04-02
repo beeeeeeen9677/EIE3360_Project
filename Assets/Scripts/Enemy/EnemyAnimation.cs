@@ -1,115 +1,73 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-	
-public class EnemyAnimation : MonoBehaviour
+using UnityEngine.AI;
+
+public class EnemyAnimatorController : MonoBehaviour
 {
-    public float deadZone = 5f;             // The number of degrees for which the rotation isn't controlled by Mecanim.
+    public Animator animator; // Enemy's Animator component
+    public NavMeshAgent agent; // Enemy's NavMeshAgent component
+    public Transform player; // Player's Transform component
+    public float shootingRange = 100f; // Shooting range
 
-    private Transform player;               // Reference to the player's transform.
-    private EnemySight enemySight;          // Reference to the EnemySight script.
-    private UnityEngine.AI.NavMeshAgent nav;               // Reference to the nav mesh agent.
-    private Animator anim;                  // Reference to the Animator.
-    private HashIDs hash;                   // Reference to the HashIDs script.
-    private AnimatorSetup animSetup;        // An instance of the AnimatorSetup helper class.
+    private float distanceToPlayer; // Distance to the player
 
-    void Awake()
+    void Start()
     {
-        // Setting up the references.
-        player = GameObject.FindGameObjectWithTag(Tags.player).transform;
-        enemySight = GetComponent<EnemySight>();
-        nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        anim = GetComponent<Animator>();
-        hash = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<HashIDs>();
-
-        // Making sure the rotation is controlled by Mecanim.
-        nav.updateRotation = false;
-
-        // Creating an instance of the AnimatorSetup class and calling it's constructor.
-        animSetup = new AnimatorSetup(anim, hash);
-
-        // Set the weights for the shooting and gun layers to 1.
-        anim.SetLayerWeight(1, 1f);
-        anim.SetLayerWeight(2, 1f);
-
-        // We need to convert the angle for the deadzone from degrees to radians.
-        deadZone *= Mathf.Deg2Rad;
+        // Start the shooting coroutine
+        StartCoroutine(Shoot());
     }
 
     void Update()
     {
-        // Calculate the parameters that need to be passed to the animator component.
-        NavAnimSetup();
-    }
-
-    
-
-
-
-    void OnAnimatorMove()
-    {
-        // Set the NavMeshAgent's velocity to the change in position since the last frame, by the time it took for the last frame.
-        nav.velocity = anim.deltaPosition / Time.deltaTime;
-
-        // The gameobject's rotation is driven by the animation's rotation.
-        transform.rotation = anim.rootRotation;
-    }
-
-    void NavAnimSetup()
-    {
-        // Create the parameters to pass to the helper function.
-        float speed;
-        float angle;
-
-        // If the player is in sight...
-        if (enemySight.playerInSight)
+        if (player != null)
         {
-            // ... the enemy should stop...
-            speed = 0f;
+            // Calculate and update the distance to the player
+            distanceToPlayer = Vector3.Distance(player.position, transform.position);
 
-            // ... and the angle to turn through is towards the player.
-            angle = FindAngle(transform.forward, player.position - transform.position, transform.up);
-        }
-        else
-        {
-            // Otherwise the speed is a projection of desired velocity on to the forward vector...
-            speed = Vector3.Project(nav.desiredVelocity, transform.forward).magnitude;
-
-            // ... and the angle is the angle between forward and the desired velocity.
-            angle = FindAngle(transform.forward, nav.desiredVelocity, transform.up);
-
-            // If the angle is within the deadZone...
-            if (Mathf.Abs(angle) < deadZone)
+            // If within shooting range, then shoot; otherwise, track the player
+            if (distanceToPlayer <= shootingRange)
             {
-                // ... set the direction to be along the desired direction and set the angle to be zero.
-                transform.LookAt(transform.position + nav.desiredVelocity);
-                angle = 0f;
+                // Stop moving
+                agent.isStopped = true;
+
+                // Set shooting animation layer, using status_k98 parameter
+                animator.SetBool("Status_Shooting", false); // Stop previous shooting animation if any
+                animator.SetLayerWeight(animator.GetLayerIndex("K9_status"), 1); // Activate K9_status layer
+
+                // Set status_k98 parameter to trigger shooting animation
+                animator.SetInteger("status_k98", 2); // Set status_k98 to 2 for aiming the weapon
+            }
+            else
+            {
+                // Move towards the player
+                agent.isStopped = false;
+                agent.SetDestination(player.position);
+
+                // Set walking animation
+                animator.SetInteger("Status_walk", 1);
+
+                // Ensure shooting animation is stopped
+                animator.SetLayerWeight(animator.GetLayerIndex("K9_status"), 0); // Deactivate K9_status layer
             }
         }
-
-        // Call the Setup function of the helper class with the given parameters.
-        animSetup.Setup(speed, angle);
     }
 
-    float FindAngle(Vector3 fromVector, Vector3 toVector, Vector3 upVector)
+    IEnumerator Shoot()
     {
-        // If the vector the angle is being calculated to is 0...
-        if (toVector == Vector3.zero)
-            // ... the angle between them is 0.
-            return 0f;
+        while (true)
+        {
+            // Check if status_k98 equals 2 for aiming weapon
+            if (animator.GetInteger("status_k98") == 2)
+            {
+                // Transition to Aim_weapon state
+                animator.SetInteger("status_k98", 0); // Set status_k98 to 0 to return to not_running state
 
-        // Create a float to store the angle between the facing of the enemy and the direction it's travelling.
-        float angle = Vector3.Angle(fromVector, toVector);
+                // Perform shooting action here (e.g., instantiate a bullet, play shooting sound, etc.)
 
-        // Find the cross product of the two vectors (this will point up if the velocity is to the right of forward).
-        Vector3 normal = Vector3.Cross(fromVector, toVector);
+                yield return new WaitForSeconds(1); // Delay before transitioning back to not_running state
+            }
 
-        // The dot product of the normal with the upVector will be positive if they point in the same direction.
-        angle *= Mathf.Sign(Vector3.Dot(normal, upVector));
-
-        
-    // We need to convert the angle we've found from degrees to radians.
-        angle *= Mathf.Deg2Rad;
-        return angle;
+            yield return null;
+        }
     }
 }
