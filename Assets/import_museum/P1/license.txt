@@ -1,0 +1,11 @@
+Model Information:
+* title:	Panzer I turret
+* source:	https://sketchfab.com/3d-models/panzer-i-turret-88865f7745cd45e5a7c6158e9a382ccd
+* author:	AdamKozakGrafika (https://sketchfab.com/AdamKozakGrafika)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Panzer I turret" (https://sketchfab.com/3d-models/panzer-i-turret-88865f7745cd45e5a7c6158e9a382ccd) by AdamKozakGrafika (https://sketchfab.com/AdamKozakGrafika) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
