@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lewis Gun British WW1 heavy machine gun
+* source:	https://sketchfab.com/3d-models/lewis-gun-british-ww1-heavy-machine-gun-2332041c12f640e6a9ce432e6e278455
+* author:	Tomas Anglim (https://sketchfab.com/tomas.anglim.811)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lewis Gun British WW1 heavy machine gun" (https://sketchfab.com/3d-models/lewis-gun-british-ww1-heavy-machine-gun-2332041c12f640e6a9ce432e6e278455) by Tomas Anglim (https://sketchfab.com/tomas.anglim.811) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Luger
+* source:	https://sketchfab.com/3d-models/luger-e7088ed700534d6782332ef19ff46d1a
+* author:	emelyarules (https://sketchfab.com/emelyarules)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Luger" (https://sketchfab.com/3d-models/luger-e7088ed700534d6782332ef19ff46d1a) by emelyarules (https://sketchfab.com/emelyarules) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
