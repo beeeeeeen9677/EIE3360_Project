@@ -7749,7 +7749,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1024689104}
   selectedCommands: []
   variables: []
   description: 
@@ -7805,7 +7806,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66.20001
     y: 70
-    width: 111
+    width: 112.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7945,7 +7946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  text: Question3
+  text: Can I take photos inside the museum?
   description: 
   targetBlock: {fileID: 1024689108}
   hideIfVisited: 0
@@ -7972,7 +7973,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 103.2
     y: 220.69994
-    width: 119
+    width: 120.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7997,7 +7998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  text: Question2
+  text: What is the mission of the museum?
   description: 
   targetBlock: {fileID: 1024689110}
   hideIfVisited: 0
@@ -8024,7 +8025,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 8.000015
     y: 270.29993
-    width: 118
+    width: 119.6
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8049,7 +8050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  text: Question1
+  text: What is the theme of the museum?
   description: 
   targetBlock: {fileID: 1024689112}
   hideIfVisited: 0
@@ -8076,7 +8077,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -77.60003
     y: 222.09995
-    width: 117
+    width: 118.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8154,7 +8155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  storyText: Answer3
+  storyText: You can take photos in the exhibition hall. However, please do not use
+    flash in the exhibition hall.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8181,7 +8183,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: Answer2
+  storyText: The mission of the museum is to allow more people to learn about the
+    history of World War II.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8208,7 +8211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: Answer1
+  storyText: The theme of the museum is the weapons exhibition of World War II.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
