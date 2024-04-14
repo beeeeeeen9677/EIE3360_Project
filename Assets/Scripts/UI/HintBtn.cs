@@ -12,7 +12,7 @@ public class HintBtn : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (CityGM.instance.cleared) 
+        if (CityGM.instance.cleared||CityGM.instance.failed) 
         {
             transform.parent.gameObject.SetActive(false);
         }

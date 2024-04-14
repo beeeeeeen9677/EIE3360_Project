@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/City.unity
-    guid: c6841f55faf52d94f942a7bf0cc4c5de
-  - enabled: 0
-    path: Assets/Scenes/Beach.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/City_test.unity
+    guid: befa0e0c01b3f4d40904ff44ee074372
+  - enabled: 1
+    path: Assets/Scenes/Beach New.unity
+    guid: 5575e2885b52000459b435066b99c402
   - enabled: 1
     path: Assets/Scenes/Museum.unity
     guid: f78cd93a3ceb9a9459c5562e26fdf0c7

@@ -19,11 +19,16 @@ public class Timer : MonoBehaviour
     public bool cleared { get; private set; } = false;
     public bool failed { get; private set; } = false;
 
+    public string currentScene;
+
+    [SerializeField]
+    private BombManager bombManager;
+
     private void Awake()
     {
         instance = this;
         anim = GetComponent<Animator>();
-        remainTime = 100;
+        //remainTime = 100;
     }
 
     public float getTime() {
@@ -40,11 +45,22 @@ public class Timer : MonoBehaviour
         if (remainTime <= 0)
         {
             remainTime = 0;
-            if(!failed)
+
+            if (currentScene == "City")
             {
-                failed = true;
-                CityGM.instance.LevelFailed();
+                if (!failed)
+                {
+                    failed = true;
+                    CityGM.instance.LevelFailed();
+                }
             }
+            else if(currentScene == "Beach")
+            {
+                cleared = true;
+                CityGM.instance.LevelCleared();
+                bombManager.StopAttacking();
+            }
+            
         }
         timerText.text = remainTime.ToString("00.00") + " S";
 
@@ -58,6 +74,15 @@ public class Timer : MonoBehaviour
         HP_Effect.SetTrigger(triggerStr);
         anim.SetTrigger(triggerStr);
         remainTime += amount;
+    }
+
+    public void DecreaseTime()//for beach scene
+    {
+        effectText.text = "-10";
+
+        HP_Effect.SetTrigger("Green");
+        anim.SetTrigger("Green");
+        remainTime -= 10;
     }
     public void LevelClear() 
     {

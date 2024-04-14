@@ -15,6 +15,9 @@ public class CityGM : MonoBehaviour
     // Get the index of the current scene
     private int currentSceneIndex;
     public bool cleared { get; private set; } = false;
+    public bool failed { get; private set; } = false;
+
+
 
     private void Awake()
     {
@@ -24,12 +27,14 @@ public class CityGM : MonoBehaviour
     public void LevelFailed()
     {
         anim.enabled = true;
+        failed = true;
     }
 
     public void RetryLevel()
     {
         // Load the current scene
         SceneManager.LoadScene(currentSceneIndex);
+        Debug.Log("Retry");
     }
 
     public void LevelCleared() 
@@ -42,6 +47,7 @@ public class CityGM : MonoBehaviour
     public void NextLevel() 
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
+        Debug.Log("Next level");
     }
 
 

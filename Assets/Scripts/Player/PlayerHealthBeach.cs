@@ -13,13 +13,15 @@ public class PlayerHealthBeach : MonoBehaviour
     private Animator hpEffectAnim;
     [SerializeField]
     private Animator textAnim;
-    
+    [SerializeField]
+    private BombManager bm;
 
-    // Update is called once per frame
-    void Update()
+
+    private void Awake()
     {
-        
+        HP_text.text = "x " + HP.ToString();
     }
+
 
     public void decreaseHP() 
     {
@@ -27,5 +29,12 @@ public class PlayerHealthBeach : MonoBehaviour
         HP_text.text = "x "+HP.ToString();
         hpEffectAnim.SetTrigger("Red");
         textAnim.SetTrigger("Hurt");
+
+        if (HP <= 0)
+        {
+            CityGM.instance.LevelFailed();
+            Timer.instance.LevelClear();//stop the timer
+            bm.StopAttacking();
+        }
     }
 }

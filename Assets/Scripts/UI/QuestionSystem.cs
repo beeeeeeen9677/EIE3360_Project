@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class QuestionSystem : MonoBehaviour
@@ -11,6 +12,8 @@ public class QuestionSystem : MonoBehaviour
     public UIButton buttonObjC;
     public UIButton buttonObjD;
     private List<UIButton> buttons = new List<UIButton>();
+    [SerializeField]
+    private TextMeshProUGUI hint;
 
 
     public static QuestionSystem instance;
@@ -19,10 +22,31 @@ public class QuestionSystem : MonoBehaviour
     public string correctAnswer;
 
 
-    private List<string> Q0 = new List<string>() { "Year of Battle of Dunkirk", "1938", "1939", "1940", "1941","C"};
-    private List<string> Q1 = new List<string>() { "Sample Question 1", "Sample Answer A1", "Sample Answer B1", "Sample Answer C1", "Sample Answer D1", "B"};
-    private List<string> Q2 = new List<string>() { "Sample Question 2", "Sample Answer A2", "Sample Answer B2", "Sample Answer C2", "Sample Answer D2", "D"};
-    private List<string> Q3 = new List<string>() { "Sample Question 3", "Sample Answer A3", "Sample Answer B3", "Sample Answer C3", "Sample Answer D3", "A" };
+    private List<string> Q0 = new List<string>() { "Battle of Dunkirk took place in which year?", "1938", "1939", "1940", "1941","C", "Find useful hint from here"};
+
+    private List<string> Q1 = new List<string>() { " The success of the Dunkirk retreat \nhad a major impact on which future battle?",
+        "the Battle of Stalingrad", 
+        "Battle of Britain", 
+        "the Normandy landings", 
+        "Battle of Moscow", 
+        "B", 
+        "The success of the Dunkirk evacuation saved a large number of British troops and provided an important defense force for the Battle of Britain. The retreat was important for Britain to maintain its fighting strength in subsequent wars."};
+
+    private List<string> Q2 = new List<string>() { "Which was not a measure taken by \nthe British government to speed up the evacuation?",
+        "mobilizing all available ships, including civilian ships",
+        "the British government appealed to the public for help through radio broadcasts",
+        "deploying the navy and air force for cover and support",
+        "requesting additional support from the French army", 
+        "D", 
+        "In the Dunkirk evacuation, the British government took a number of measures to speed up the evacuation process, including using all available ships, broadcasting appeals for help, and deploying naval and air forces for cover and support. However, the British did not ask for additional support from the French army as they themselves were under attack and pressure from the Germans." };
+    
+    private List<string> Q3 = new List<string>() { "Which of the following is a correct description \nof the Dunkirk Evacuation?",
+        "a large number of soldiers \nwere able to escape during the retreat",
+        "was a well-planned military operation",
+        "there was no German resistance to the retreat",
+        "it was carried out mainly by military ships", 
+        "A", 
+        "The Dunkirk evacuation was an emergency and large-scale military evacuation in which many soldiers managed to escape. The evacuation was not well planned, it was pursued by the Germans, and a large number of civilian ships were used for the evacuation." };
 
 
     private List<List<string>> questionList = new List<List<string>>();
@@ -98,6 +122,8 @@ public class QuestionSystem : MonoBehaviour
         buttonObjD.SetAnswer(questionList[currentQuestionZone][4]);
 
         correctAnswer = questionList[currentQuestionZone][5];
+
+        hint.text = questionList[currentQuestionZone][6];
     }
 
 

@@ -20,11 +20,7 @@ public class BombManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     private void LaunchMissile() //shoot player
     {
@@ -35,5 +31,10 @@ public class BombManager : MonoBehaviour
     private void ShootMissile(Vector3 position)
     {
         Instantiate(missilePrefab, position + Vector3.up * 500, Quaternion.Euler(0f, 0f, -90f));
+    }
+
+    public void StopAttacking()
+    {
+        Destroy(this);
     }
 }
