@@ -4,16 +4,35 @@ using UnityEngine;
 
 public class BombEffect : MonoBehaviour
 {
+    [SerializeField]
+    private Collider _collider;
+    [SerializeField]
+    private float effectTime = 2.5f;
+    [SerializeField]
+    private float lifetime = 4f;
+    
+
+    
     private void OnTriggerStay(Collider other)
     {
         if (other.tag=="Player")
         {
-            Rigidbody playerRB = other.GetComponent<Rigidbody>();
-            Vector3 direction = (transform.position - playerRB.position).normalized;
+            PlayerHealthBeach playerHP = other.GetComponent<PlayerHealthBeach>();
 
-            playerRB.AddForce(Vector3.up*5000 , ForceMode.Impulse);
-
-            Destroy(gameObject);
+            //Debug.Log("Hit");
+            playerHP.decreaseHP();
+            _collider.enabled = false;
         }
+    }
+
+    private void Update()
+    {
+        effectTime -= Time.deltaTime;
+        if ( effectTime <=0 )
+            _collider.enabled = false;
+
+        lifetime -= Time.deltaTime;
+        if (lifetime <= 0)
+            Destroy(gameObject);
     }
 }
