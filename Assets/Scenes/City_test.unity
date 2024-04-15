@@ -564,6 +564,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1687017656}
+    - target: {fileID: 4538418106774734404, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4586440846298441713, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: player
       value: 
@@ -1341,6 +1345,10 @@ PrefabInstance:
       propertyPath: shootingRange
       value: 999999
       objectReference: {fileID: 0}
+    - target: {fileID: 3440087028908040119, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3614651659305408610, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: m_Name
       value: wehrmacht_b (6)
@@ -1872,6 +1880,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7809335505572523538, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8410314185707330582, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: m_Name
       value: SchutzStaffel_A (4)
@@ -2230,6 +2242,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7809335505572523538, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8410314185707330582, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: m_Name
       value: SchutzStaffel_A (6)
@@ -2454,6 +2470,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1221813761}
     m_Modifications:
+    - target: {fileID: 1881815486567102514, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2865394252558988702, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2651,6 +2671,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 628232153}
+    - target: {fileID: 4538418106774734404, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4586440846298441713, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: player
       value: 
@@ -2704,6 +2728,10 @@ PrefabInstance:
     - target: {fileID: 3411253309130830137, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_Name
       value: Wehrmacht_C (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6049915081898220921, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8327311396619939283, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_LocalScale.x
@@ -2926,6 +2954,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1106302675}
+    - target: {fileID: 4538418106774734404, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4586440846298441713, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: player
       value: 
@@ -3142,6 +3174,10 @@ PrefabInstance:
       propertyPath: shootingRange
       value: 999999
       objectReference: {fileID: 0}
+    - target: {fileID: 3440087028908040119, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3614651659305408610, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: m_Name
       value: wehrmacht_b (5)
@@ -3258,6 +3294,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 519957646}
     m_Modifications:
+    - target: {fileID: 1881815486567102514, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2865394252558988702, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5075,6 +5115,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 517174656}
     m_Modifications:
+    - target: {fileID: 1881815486567102514, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2865394252558988702, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6559,6 +6603,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7809335505572523538, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8410314185707330582, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: m_Name
       value: SchutzStaffel_A (2)
@@ -7883,6 +7931,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1106302675}
+    - target: {fileID: 4538418106774734404, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4586440846298441713, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: player
       value: 
@@ -10537,6 +10589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wehrmacht_C (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6049915081898220921, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8327311396619939283, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -10781,6 +10837,10 @@ PrefabInstance:
       propertyPath: shootingRange
       value: 999999
       objectReference: {fileID: 0}
+    - target: {fileID: 3440087028908040119, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3614651659305408610, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: m_Name
       value: wehrmacht_b (2)
@@ -10882,6 +10942,10 @@ PrefabInstance:
     - target: {fileID: 735440527187376661, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: shootingRange
       value: 999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3440087028908040119, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3614651659305408610, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: m_Name
@@ -11301,6 +11365,10 @@ PrefabInstance:
     - target: {fileID: 735440527187376661, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: shootingRange
       value: 999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3440087028908040119, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3614651659305408610, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: m_Name
@@ -13096,6 +13164,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1011438121}
     m_Modifications:
+    - target: {fileID: 1881815486567102514, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2865394252558988702, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -15170,6 +15242,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1750279529}
     m_Modifications:
+    - target: {fileID: 1881815486567102514, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2865394252558988702, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -15291,6 +15367,10 @@ PrefabInstance:
     - target: {fileID: 3411253309130830137, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_Name
       value: Wehrmacht_C (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6049915081898220921, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8327311396619939283, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_LocalScale.x
@@ -15829,6 +15909,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 611770409}
+    - target: {fileID: 4538418106774734404, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4586440846298441713, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: player
       value: 
@@ -15859,6 +15943,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1305309267}
     m_Modifications:
+    - target: {fileID: 1881815486567102514, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2865394252558988702, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -16640,6 +16728,10 @@ PrefabInstance:
     - target: {fileID: 4456866525476444134, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809335505572523538, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8410314185707330582, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: m_Name
@@ -18831,6 +18923,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 854056353}
+    - target: {fileID: 4538418106774734404, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4586440846298441713, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: player
       value: 
@@ -19277,6 +19373,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.963
       objectReference: {fileID: 0}
+    - target: {fileID: 7809335505572523538, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8410314185707330582, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: m_Name
       value: SchutzStaffel_A (5)
@@ -19525,6 +19625,10 @@ PrefabInstance:
     - target: {fileID: 3411253309130830137, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_Name
       value: Wehrmacht_C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6049915081898220921, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8327311396619939283, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_LocalScale.x
@@ -20450,6 +20554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wehrmacht_C (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6049915081898220921, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8327311396619939283, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -20947,6 +21055,10 @@ PrefabInstance:
     - target: {fileID: 735440527187376661, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: shootingRange
       value: 999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3440087028908040119, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3614651659305408610, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: m_Name
@@ -22035,7 +22147,7 @@ Transform:
   m_GameObject: {fileID: 1966685006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 35, z: 6}
+  m_LocalPosition: {x: 0, y: 45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23049,6 +23161,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7809335505572523538, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8410314185707330582, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: m_Name
       value: SchutzStaffel_A (1)
@@ -23659,6 +23775,10 @@ PrefabInstance:
     - target: {fileID: 3411253309130830137, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_Name
       value: Wehrmacht_C (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6049915081898220921, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8327311396619939283, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_LocalScale.x
