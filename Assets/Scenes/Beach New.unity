@@ -3967,6 +3967,7 @@ MonoBehaviour:
   sensitivity: 2
   player: {fileID: 1750555372}
   buttonUI: {fileID: 260799280}
+  joystick: {fileID: 0}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6386,7 +6387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1027330323972909539, guid: e78111d187b3874429701903da2f9935, type: 3}
       propertyPath: speed2
-      value: 50
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 1027330323972909539, guid: e78111d187b3874429701903da2f9935, type: 3}
       propertyPath: oneShotAudioClip
