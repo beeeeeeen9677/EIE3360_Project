@@ -4,46 +4,73 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public float chaseSpeed = 1000000f;       // Increase chase speed for faster pursuit.
+    public float chaseSpeed = 100f;
+    public float chaseRange = 100f;
+    public Transform[] waypoints;
 
-    private UnityEngine.AI.NavMeshAgent nav;           // Reference to the nav mesh agent.
-    private Transform player;            // Reference to the player's transform;
-    private Vector3 lastPlayerPosition;  // Store the last known position of the player.
+    private UnityEngine.AI.NavMeshAgent nav;
+    private Transform player;
+    private Vector3 lastPlayerPosition;
+    private bool isChasingPlayer = false;
+    private int currentWaypointIndex = 0;
 
     void Awake()
     {
-        // Setting up the references.
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        player = GameObject.FindGameObjectWithTag("Player").transform; // Assuming your player has a tag "Player"
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        SetNextWaypoint();
     }
 
     void Update()
     {
-        // Always chase the player
-        ChasePlayer();
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+        if (distanceToPlayer <= chaseRange)
+        {
+            isChasingPlayer = true;
+            ChasePlayer();
+        }
+        else
+        {
+            isChasingPlayer = false;
+            PatrolBetweenWaypoints();
+        }
     }
 
     void ChasePlayer()
     {
-        // Ensure nav mesh agent is enabled before setting destination
         if (!nav.enabled) return;
 
-        // Set the destination for the NavMeshAgent to the player's position or last known position.
-        Vector3 targetPosition = player.position;
+        nav.SetDestination(player.position);
+        nav.speed = chaseSpeed;
+        lastPlayerPosition = player.position;
+    }
 
-        // If the player is moving, update the target position to the last known player position.
-        if (player.position != lastPlayerPosition)
+    void PatrolBetweenWaypoints()
+    {
+        if (waypoints.Length == 0)
         {
-            targetPosition = lastPlayerPosition;
+            Debug.LogError("No waypoints found. Please assign waypoints to the EnemyAI script.");
+            return;
         }
 
-        // Set the destination for the NavMeshAgent.
-        nav.SetDestination(targetPosition);
+        if (!isChasingPlayer)
+        {
+            if (nav.remainingDistance < 0.5f)
+            {
+                SetNextWaypoint();
+            }
+        }
+    }
 
-        // Set the appropriate speed for the NavMeshAgent.
+    void SetNextWaypoint()
+    {
+        if (waypoints.Length == 0) return;
+
+        nav.SetDestination(waypoints[currentWaypointIndex].position);
         nav.speed = chaseSpeed;
 
-        // Update the last known player position.
-        lastPlayerPosition = player.position;
+        currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
     }
 }

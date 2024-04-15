@@ -2888,9 +2888,10 @@ GameObject:
   - component: {fileID: 4174217386314984386}
   - component: {fileID: 2320705249931209035}
   - component: {fileID: 5032260823340647309}
+  - component: {fileID: 2189622026171817149}
   m_Layer: 0
   m_Name: SchutzStaffel_A
-  m_TagString: Enemy
+  m_TagString: schutzstaffel_a
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2903,8 +2904,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8410314185707330582}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -173.9, y: -8.4, z: -1608.3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -263.8, y: -32.792664, z: -6.1000977}
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3014,7 +3015,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910fa94cce059405492e38930ef6925a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 1000000
+  chaseSpeed: 1000
+  chaseRange: 1000
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &2320705249931209035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3030,7 +3035,15 @@ MonoBehaviour:
   animator: {fileID: 7809335505572523538}
   agent: {fileID: 118079732753158122}
   player: {fileID: 0}
-  shootingRange: 150
+  shootingRange: 15000
+  FlammenWerfer: {fileID: 3794617376734060319}
+  Luger: {fileID: 2770231177898514980}
+  MP40: {fileID: 3933623599064130640}
+  STG44: {fileID: 8253348775015292048}
+  PanzerFaust: {fileID: 4886912815242053685}
+  PanzerSchreck: {fileID: 7191111751468606859}
+  k98: {fileID: 2226262883468491213}
+  MG42: {fileID: 5857986145343777984}
 --- !u!114 &5032260823340647309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3046,7 +3059,24 @@ MonoBehaviour:
   shootingRange: 150
   damagePerShot: 1
   shotInterval: 5
-  shotClip: {fileID: 8300000, guid: 0af3d513283ae634480aa98a0d2da839, type: 3}
+  shotClip: {fileID: 8300000, guid: 3ec94c2f6f5eee64dba5ac98ef7d398e, type: 3}
+  shotVolume: 1
+--- !u!114 &2189622026171817149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8410314185707330582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1091da6aeb9f045298a5bd63524f760b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 1000
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &8834154915731031150
 GameObject:
   m_ObjectHideFlags: 0

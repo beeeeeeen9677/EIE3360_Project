@@ -7,6 +7,7 @@ public class EnemyShooting : MonoBehaviour
     public float damagePerShot = 20f; // Damage inflicted per shot
     public float shotInterval = 1f; // Interval between shots
     public AudioClip shotClip; // Audio clip for the shot
+    public float shotVolume = 1.0f; // Volume level for the gunshot sound
 
     private Transform player; // Reference to the player's transform
     private PlayerHealth playerHealth; // Reference to the player's health
@@ -32,8 +33,8 @@ public class EnemyShooting : MonoBehaviour
 
     void Shoot()
     {
-        // Play the gunshot sound
-        AudioSource.PlayClipAtPoint(shotClip, transform.position);
+        // Play the gunshot sound with increased volume
+        AudioSource.PlayClipAtPoint(shotClip, transform.position, shotVolume);
 
         // Reduce player's health
         playerHealth.TakeDamage(damagePerShot);

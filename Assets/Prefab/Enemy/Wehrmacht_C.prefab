@@ -992,9 +992,10 @@ GameObject:
   - component: {fileID: 1450476192032886230}
   - component: {fileID: 1922813722344393565}
   - component: {fileID: 336312494792989072}
+  - component: {fileID: 2235565976684825752}
   m_Layer: 0
   m_Name: Wehrmacht_C
-  m_TagString: Enemy
+  m_TagString: wehrmacht_c
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1007,8 +1008,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3411253309130830137}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -84.7, y: -9.3, z: -1642.1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -174.6, y: -33.69266, z: -39.900024}
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1118,7 +1119,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910fa94cce059405492e38930ef6925a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 1000000
+  chaseSpeed: 1000
+  chaseRange: 1000
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1922813722344393565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,7 +1139,15 @@ MonoBehaviour:
   animator: {fileID: 6049915081898220921}
   agent: {fileID: 8642509263680695324}
   player: {fileID: 0}
-  shootingRange: 150
+  shootingRange: 15000
+  FlammenWerfer: {fileID: 1191740785644761364}
+  Luger: {fileID: 3569871526799168965}
+  MP40: {fileID: 8539525829647230046}
+  STG44: {fileID: 9465465030233822}
+  PanzerFaust: {fileID: 4000190202911093821}
+  PanzerSchreck: {fileID: 6933229854859326660}
+  k98: {fileID: 3603958863186864478}
+  MG42: {fileID: 6675613347531251888}
 --- !u!114 &336312494792989072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,7 +1163,24 @@ MonoBehaviour:
   shootingRange: 150
   damagePerShot: 1
   shotInterval: 5
-  shotClip: {fileID: 8300000, guid: 0af3d513283ae634480aa98a0d2da839, type: 3}
+  shotClip: {fileID: 8300000, guid: 3ec94c2f6f5eee64dba5ac98ef7d398e, type: 3}
+  shotVolume: 1
+--- !u!114 &2235565976684825752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3411253309130830137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1091da6aeb9f045298a5bd63524f760b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 1000
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &3460599389758044679
 GameObject:
   m_ObjectHideFlags: 0
