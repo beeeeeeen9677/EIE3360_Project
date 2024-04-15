@@ -2030,6 +2030,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1206331892}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &465276504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 465276506}
+  - component: {fileID: 465276505}
+  - component: {fileID: 465276507}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &465276505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465276504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558da56031b684a409b84bfa229b6792, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &465276506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465276504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 263.59744, y: 36.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &465276507
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465276504}
+  m_Enabled: 1
 --- !u!1 &524148274
 GameObject:
   m_ObjectHideFlags: 0
@@ -3941,7 +3994,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ba944c8a4471f8243b902930f7c77895, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.074
+  m_Volume: 0.713
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6336,6 +6389,10 @@ PrefabInstance:
       propertyPath: speed2
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 1027330323972909539, guid: e78111d187b3874429701903da2f9935, type: 3}
+      propertyPath: oneShotAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 74a88b5082e48914e9461225907bd512, type: 3}
     - target: {fileID: 1287869375710933774, guid: e78111d187b3874429701903da2f9935, type: 3}
       propertyPath: m_Controller
       value: 
@@ -6453,7 +6510,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750555372}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!224 &1769208430 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7998045512753360655, guid: d26f0dc6c9ee05044beffe7c4dd2c7b4, type: 3}
@@ -7619,3 +7676,4 @@ SceneRoots:
   - {fileID: 209511771}
   - {fileID: 752786612}
   - {fileID: 1947261911}
+  - {fileID: 465276506}
