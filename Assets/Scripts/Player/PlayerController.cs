@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float speed2 = 1;
     private Vector3 currentVelocity;
 
+    public FixedJoystick joystick;
+
     void Start()
     {
         rb2 = GetComponent<Rigidbody>();
@@ -20,6 +22,10 @@ public class PlayerController : MonoBehaviour
 
         float moveHorizontal = 0;
         float moveVertical = 0;
+
+
+        //moveHorizontal = joystick.Horizontal;
+        //moveVertical = joystick.Vertical;
 
         // Get input for horizontal and vertical movement
         moveHorizontal = Input.GetAxis("Horizontal");

@@ -7,9 +7,6 @@ public class EnemyAnimatorController : MonoBehaviour
     public Animator animator; // Enemy's Animator component
     public NavMeshAgent agent; // Enemy's NavMeshAgent component
     public Transform player; // Player's Transform component
-    public float shootingRange = 100f; // Shooting range
-
-    private float distanceToPlayer; // Distance to the player
 
     public GameObject FlammenWerfer;
     public GameObject Luger;
@@ -78,43 +75,53 @@ public class EnemyAnimatorController : MonoBehaviour
 
     void Update()
     {
-        if (player != null)
+        // Set walking animation
+        animator.SetInteger("Status_walk", 1);
+
+        // Activate the corresponding weapon status based on the active weapon
+        SetWeaponStatus();
+
+        // Set aiming animation for the active weapon
+        SetAimingAnimation();
+    }
+
+    void SetWeaponStatus()
+    {
+        if (Luger.activeSelf)
         {
-            // Calculate and update the distance to the player
-            distanceToPlayer = Vector3.Distance(player.position, transform.position);
-            animator.SetInteger("Status_walk", 1);
-
-            // If within shooting range, then shoot; otherwise, track the player
-            if (distanceToPlayer <= shootingRange)
-            {
-                animator.SetLayerWeight(animator.GetLayerIndex("K9_status"), 1); // Activate K9_status layer
-
-                // Set status_k98 parameter to trigger shooting animation
-                animator.SetInteger("status_k98", 2); // Set status_k98 to 2 for aiming the weapon
-            }
-            else
-            {
-                // Move towards the player
-                agent.SetDestination(player.position);
-
-                // Set walking animation
-                animator.SetInteger("Status_walk", 1);
-                animator.SetLayerWeight(animator.GetLayerIndex("K9_status"), 0); // Activate K9_status layer
-            }
+            animator.SetInteger("Status_LugerP08", 2); // Set status_Luger to 2 for aiming the Luger
         }
+        else if (k98.activeSelf)
+        {
+            animator.SetInteger("status_k98", 2); // Set status_k98 to 2 for aiming the k98
+        }
+        else if (FlammenWerfer.activeSelf)
+        {
+            animator.SetInteger("Flammenwerfer_status", 2); // Set status_FlammenWerfer to 2 for aiming the FlammenWerfer
+        }
+        else if (MG42.activeSelf)
+        {
+            animator.SetInteger("Status_MG42", 2); // Set status_MG42 to 2 for aiming the MG42
+        }
+        else if (STG44.activeSelf)
+        {
+            animator.SetInteger("Status_stg44", 2); // Set status_STG44 to 2 for aiming the STG44
+        }
+    }
+
+    void SetAimingAnimation()
+    {
+        // Perform aiming animation based on the active weapon, no need to check player's position
     }
 
     IEnumerator Shoot()
     {
         while (true)
         {
-            // Check if status_k98 equals 2 for aiming weapon
-            if (animator.GetInteger("status_k98") == 2)
-            {
-                // Perform shooting action here (e.g., instantiate a bullet, play shooting sound, etc.)
+            // Check if the active weapon status equals 2 for aiming
+            // Perform shooting action here (e.g., instantiate a bullet, play shooting sound, etc.)
 
-                yield return new WaitForSeconds(1); // Delay before transitioning back to not_running state
-            }
+            yield return new WaitForSeconds(1); // Delay before transitioning back to not_running state
 
             yield return null;
         }

@@ -11,6 +11,7 @@ TagManager:
   - schutzstaffel_b
   - wehrmacht_c
   - Enemy
+  - NPC
   layers:
   - Default
   - TransparentFX
