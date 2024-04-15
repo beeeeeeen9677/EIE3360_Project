@@ -5447,7 +5447,7 @@ GameObject:
   - component: {fileID: 729133960}
   - component: {fileID: 729133959}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player(Non VR)
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16909,7 +16909,7 @@ GameObject:
   - component: {fileID: 7892583372329720556}
   - component: {fileID: 7892583372329720561}
   m_Layer: 0
-  m_Name: PlayerController
+  m_Name: PlayerController(VR)
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
