@@ -21,7 +21,7 @@ public class BombEffect : MonoBehaviour
         {
             NpcHealth npcHp = other.GetComponent<NpcHealth>();
             npcHp.TakeDamage(20); // Adjust the amount of damage as needed
-            _collider.enabled = false;
+           
         }
     }
 
