@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -254,6 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1001 &21038852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -794,6 +795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1001 &173823543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -986,6 +988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1 &235983480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3033,6 +3036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1001 &762388711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3271,6 +3275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1 &813860615 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3411253309130830137, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
@@ -3290,6 +3295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!114 &813860626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3533,6 +3539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1 &908688468
 GameObject:
   m_ObjectHideFlags: 0
@@ -3886,7 +3893,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 30, z: 0}
+  m_LocalPosition: {x: 0, y: 45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3907,6 +3914,7 @@ MonoBehaviour:
   sensitivity: 2
   player: {fileID: 1750555372}
   buttonUI: {fileID: 260799280}
+  joystick: {fileID: 0}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4036,6 +4044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!114 &1006218861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4181,6 +4190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1001 &1034204367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4351,6 +4361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!114 &1116738968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4692,6 +4703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!114 &1293100978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4972,6 +4984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1001 &1412010492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5065,6 +5078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!114 &1414778903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6070,6 +6084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1001 &1728250997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6308,6 +6323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1001 &1750555371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6755,6 +6771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1001 &1814415585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7035,6 +7052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!114 &1973813405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7222,6 +7240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   deathSound: {fileID: 8300000, guid: 1eecd8c7c93df5b458b523d0a6a01855, type: 3}
+  deathSoundVolume: 1
 --- !u!1001 &2053033405
 PrefabInstance:
   m_ObjectHideFlags: 0
