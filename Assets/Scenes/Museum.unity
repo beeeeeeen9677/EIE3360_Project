@@ -679,8 +679,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.5
-  MaxDistance: 1
+  MinDistance: 0.1
+  MaxDistance: 0.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2147,7 +2147,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MG-34
+  m_text: F1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5452,7 +5452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &729133959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7750,7 +7750,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1024689104}
+  - {fileID: 1024689108}
   selectedCommands: []
   variables: []
   description: 
@@ -7806,7 +7806,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66.20001
     y: 70
-    width: 112.4
+    width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7973,7 +7973,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 103.2
     y: 220.69994
-    width: 120.4
+    width: 119
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8025,7 +8025,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 8.000015
     y: 270.29993
-    width: 119.6
+    width: 118
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8077,7 +8077,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -77.60003
     y: 222.09995
-    width: 118.8
+    width: 117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16914,7 +16914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!136 &7892583372329720556
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17566,8 +17566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4133858333ed264ebae0d70265b7b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AimButton: 4
-  TeleportButton: 4
+  AimButton: 5
+  TeleportButton: 6
   FastTeleport: 0
   LeftHand: {fileID: 7892583373056518060}
   RightHand: {fileID: 7892583372562125027}
@@ -17995,11 +17995,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4708573953388527200, guid: cca6105d0c54ae74f9473b5229a69c18, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.06
+      value: -14.455
       objectReference: {fileID: 0}
     - target: {fileID: 4708573953388527200, guid: cca6105d0c54ae74f9473b5229a69c18, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.674
+      value: 0.322
       objectReference: {fileID: 0}
     - target: {fileID: 4708573953388527200, guid: cca6105d0c54ae74f9473b5229a69c18, type: 3}
       propertyPath: m_LocalPosition.z
