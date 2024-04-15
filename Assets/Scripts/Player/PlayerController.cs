@@ -27,12 +27,12 @@ public class PlayerController : MonoBehaviour
         float moveVertical = 0;
 
 
-        //moveHorizontal = joystick.Horizontal;
-        //moveVertical = joystick.Vertical;
+        moveHorizontal = joystick.Horizontal;
+        moveVertical = joystick.Vertical;
 
         // Get input for horizontal and vertical movement
-        moveHorizontal = Input.GetAxis("Horizontal");
-        moveVertical = Input.GetAxis("Vertical");
+        //moveHorizontal = Input.GetAxis("Horizontal");
+        //moveVertical = Input.GetAxis("Vertical");
 
         // Create a vector for the movement direction based on input
         Vector3 moveDirection = new Vector3(moveHorizontal, 0.0f, moveVertical).normalized;
