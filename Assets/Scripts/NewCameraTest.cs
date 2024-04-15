@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class NewCameraTest : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class NewCameraTest : MonoBehaviour
     public GameObject player;
     private Vector3 offset;
     public GameObject buttonUI;
+    public FixedJoystick joystick;
 
     //Sets the depth bias on the GPU. Depth bias, also called depth offset, is a setting on the GPU that determines the depth at which it draws geometry. Adjust the depth bias to force the GPU to draw geometry on top of other geometry at the same depth.
     // Start is called before the first frame update
@@ -41,8 +44,25 @@ public class NewCameraTest : MonoBehaviour
         }
 
 
-        float mouseX = Input.GetAxis("Mouse X");
-        float mouseY = Input.GetAxis("Mouse Y");
+        float mouseX = 0;
+        float mouseY = 0;
+
+        mouseX = Input.GetAxis("Mouse X");
+        mouseY = Input.GetAxis("Mouse Y");
+
+        //for mobile
+        /*
+        if (Touchscreen.current.touches.Count > 0 && Touchscreen.current.touches[0].isInProgress) 
+        {
+            Vector2 touchPos = Touchscreen.current.touches[0].position.ReadValue();
+            RectTransform joystickRect = joystick.GetComponent<RectTransform>();
+
+            if (RectTransformUtility.RectangleContainsScreenPoint(joystickRect, touchPos))
+                return;
+            mouseX = Touchscreen.current.touches[0].delta.ReadValue().x;
+            mouseY = Touchscreen.current.touches[0].delta.ReadValue().y;
+        }
+        */
 
         currentRotation.x += mouseX * sensitivity;
         currentRotation.y -= mouseY * sensitivity; // Invert Y-axis for mouse look
