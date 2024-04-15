@@ -47,11 +47,11 @@ public class NewCameraTest : MonoBehaviour
         float mouseX = 0;
         float mouseY = 0;
 
-        //mouseX = Input.GetAxis("Mouse X");
-        //mouseY = Input.GetAxis("Mouse Y");
+        mouseX = Input.GetAxis("Mouse X");
+        mouseY = Input.GetAxis("Mouse Y");
 
         //for mobile
-        
+        /*
         if (Touchscreen.current.touches.Count > 0 && Touchscreen.current.touches[0].isInProgress) 
         {
             Vector2 touchPos = Touchscreen.current.touches[0].position.ReadValue();
@@ -62,7 +62,7 @@ public class NewCameraTest : MonoBehaviour
             mouseX = Touchscreen.current.touches[0].delta.ReadValue().x;
             mouseY = Touchscreen.current.touches[0].delta.ReadValue().y;
         }
-        
+        */
 
         currentRotation.x += mouseX * sensitivity;
         currentRotation.y -= mouseY * sensitivity; // Invert Y-axis for mouse look
