@@ -496,6 +496,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1305309267}
     m_Modifications:
+    - target: {fileID: 653809097290287016, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3322532956704390318, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1341,6 +1345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wehrmacht_b (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5878453395927780271, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 7096490656699027567, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -1788,6 +1796,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 517174656}
     m_Modifications:
+    - target: {fileID: 118079732753158122, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 2320705249931209035, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: player
       value: 
@@ -2142,6 +2154,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1221813761}
     m_Modifications:
+    - target: {fileID: 118079732753158122, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 2320705249931209035, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: player
       value: 
@@ -2490,6 +2506,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3409053049496907270, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 4261959716617146934, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: player
       value: 
@@ -2563,6 +2583,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1011438121}
     m_Modifications:
+    - target: {fileID: 653809097290287016, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3322532956704390318, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2733,6 +2757,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8642509263680695324, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2830,6 +2858,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 517174656}
     m_Modifications:
+    - target: {fileID: 653809097290287016, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3322532956704390318, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3114,6 +3146,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wehrmacht_b (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5878453395927780271, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 7096490656699027567, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -3273,6 +3309,10 @@ PrefabInstance:
     - target: {fileID: 2865394252558988702, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3409053049496907270, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_Speed
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4261959716617146934, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: player
@@ -5087,6 +5127,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3409053049496907270, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 4261959716617146934, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: player
       value: 
@@ -6439,6 +6483,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 519957646}
     m_Modifications:
+    - target: {fileID: 118079732753158122, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 2320705249931209035, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: player
       value: 
@@ -7767,6 +7815,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 519957646}
     m_Modifications:
+    - target: {fileID: 653809097290287016, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3322532956704390318, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -10537,6 +10589,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.963
       objectReference: {fileID: 0}
+    - target: {fileID: 8642509263680695324, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10729,6 +10785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wehrmacht_b (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5878453395927780271, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 7096490656699027567, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -10826,6 +10886,10 @@ PrefabInstance:
     - target: {fileID: 3614651659305408610, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: m_Name
       value: wehrmacht_b (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878453395927780271, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_Speed
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7096490656699027567, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: playerPrefab
@@ -11241,6 +11305,10 @@ PrefabInstance:
     - target: {fileID: 3614651659305408610, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: m_Name
       value: wehrmacht_b (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878453395927780271, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_Speed
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7096490656699027567, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: playerPrefab
@@ -13079,6 +13147,10 @@ PrefabInstance:
     - target: {fileID: 2865394252558988702, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.963
+      objectReference: {fileID: 0}
+    - target: {fileID: 3409053049496907270, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_Speed
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4261959716617146934, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: player
@@ -15150,6 +15222,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3409053049496907270, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 4261959716617146934, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: player
       value: 
@@ -15267,6 +15343,10 @@ PrefabInstance:
     - target: {fileID: 8327311396619939283, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8642509263680695324, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_Speed
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15681,6 +15761,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1221813761}
     m_Modifications:
+    - target: {fileID: 653809097290287016, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3322532956704390318, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -15826,6 +15910,10 @@ PrefabInstance:
     - target: {fileID: 2865394252558988702, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3409053049496907270, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_Speed
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4261959716617146934, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: player
@@ -16376,6 +16464,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1305309267}
     m_Modifications:
+    - target: {fileID: 118079732753158122, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 2320705249931209035, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: player
       value: 
@@ -18559,6 +18651,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1750279529}
     m_Modifications:
+    - target: {fileID: 653809097290287016, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3322532956704390318, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -18993,6 +19089,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1011438121}
     m_Modifications:
+    - target: {fileID: 118079732753158122, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 2320705249931209035, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: player
       value: 
@@ -19365,6 +19465,10 @@ PrefabInstance:
     - target: {fileID: 8327311396619939283, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8642509263680695324, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_Speed
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20286,6 +20390,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8642509263680695324, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20731,6 +20839,10 @@ PrefabInstance:
     - target: {fileID: 3614651659305408610, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: m_Name
       value: wehrmacht_b (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878453395927780271, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_Speed
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7096490656699027567, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: playerPrefab
@@ -21810,13 +21922,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966685006}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 35, z: 7}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 35, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1966685012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22748,6 +22860,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1750279529}
     m_Modifications:
+    - target: {fileID: 118079732753158122, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 2320705249931209035, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: player
       value: 
@@ -23483,6 +23599,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8642509263680695324, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23580,21 +23700,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1027330323972909539, guid: e78111d187b3874429701903da2f9935, type: 3}
+      propertyPath: speed2
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1287869375710933774, guid: e78111d187b3874429701903da2f9935, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: dfacbd1aa4b9fb447a77e7158b926678, type: 2}
+    - target: {fileID: 1287869375710933774, guid: e78111d187b3874429701903da2f9935, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2030848996110867407, guid: e78111d187b3874429701903da2f9935, type: 3}
       propertyPath: m_LocalScale.x
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2030848996110867407, guid: e78111d187b3874429701903da2f9935, type: 3}
       propertyPath: m_LocalScale.y
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2030848996110867407, guid: e78111d187b3874429701903da2f9935, type: 3}
       propertyPath: m_LocalScale.z
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2030848996110867407, guid: e78111d187b3874429701903da2f9935, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23660,6 +23788,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 560369403}
     m_Modifications:
+    - target: {fileID: 336312494792989072, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: shotInterval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1450476192032886230, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -23679,6 +23811,10 @@ PrefabInstance:
     - target: {fileID: 1922813722344393565, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: shootingRange
       value: 999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2235565976684825752, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: detectionRange
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 3411253309130830137, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
       propertyPath: m_Name
@@ -23740,6 +23876,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8642509263680695324, guid: 48922a25ed22b7441a98b759c9ccecbd, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23758,6 +23898,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 560369403}
     m_Modifications:
+    - target: {fileID: 653809097290287016, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3322532956704390318, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -23834,6 +23978,14 @@ PrefabInstance:
       propertyPath: shootingRange
       value: 999999
       objectReference: {fileID: 0}
+    - target: {fileID: 6094495656420072121, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: shotInterval
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396669732340077709, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
+      propertyPath: detectionRange
+      value: 3000
+      objectReference: {fileID: 0}
     - target: {fileID: 9029519104729581511, guid: 12af07d5914b9554393f6bff6beaff3c, type: 3}
       propertyPath: m_Name
       value: Wehrmacht_A
@@ -23856,6 +24008,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 560369403}
     m_Modifications:
+    - target: {fileID: 1361849085302766759, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: detectionRange
+      value: 3000
+      objectReference: {fileID: 0}
     - target: {fileID: 1881815486567102514, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_UpdateMode
       value: 2
@@ -23912,6 +24068,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3409053049496907270, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 4261959716617146934, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: player
       value: 
@@ -23923,6 +24083,10 @@ PrefabInstance:
     - target: {fileID: 6272299288870404754, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: m_Name
       value: SchutzStaffel_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659708090181710654, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
+      propertyPath: shotInterval
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8981721838600574311, guid: be49b6bcd0072a24d8b941008e5930e4, type: 3}
       propertyPath: playerPrefab
@@ -23954,6 +24118,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 560369403}
     m_Modifications:
+    - target: {fileID: 118079732753158122, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189622026171817149, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: detectionRange
+      value: 3000
+      objectReference: {fileID: 0}
     - target: {fileID: 2320705249931209035, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: player
       value: 
@@ -24026,6 +24198,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5032260823340647309, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
+      propertyPath: shotInterval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7809335505572523538, guid: f40872cba205d2449928b6c27e839f3a, type: 3}
       propertyPath: m_UpdateMode
       value: 2
@@ -24056,6 +24232,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 560369403}
     m_Modifications:
+    - target: {fileID: 575532950005774272, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: detectionRange
+      value: 3000
+      objectReference: {fileID: 0}
     - target: {fileID: 735440527187376661, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: agent
       value: 
@@ -24076,6 +24256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wehrmacht_b
       objectReference: {fileID: 0}
+    - target: {fileID: 5878453395927780271, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: m_Speed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 7096490656699027567, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -24088,6 +24272,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 242110740}
+    - target: {fileID: 7804485589764149317, guid: 94723a98def980546aaaec2c5602325f, type: 3}
+      propertyPath: shotInterval
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8769702081030610071, guid: 94723a98def980546aaaec2c5602325f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
