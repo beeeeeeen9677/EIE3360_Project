@@ -32,8 +32,11 @@ public class NpcHealth : MonoBehaviour
     {
         isDead = true;
 
-        // Play death sound effect with adjusted volume
-        AudioSource.PlayClipAtPoint(deathSound, transform.position, deathSoundVolume);
+        // Get the position of the Sound Manager (Audio Listener)
+        Vector3 soundManagerPosition = new Vector3(263.5974f, 36.4f, 0f);
+
+        // Play death sound effect with adjusted volume at the Sound Manager's position
+        SoundManager.Instance.PlayDeathSound(deathSound, soundManagerPosition, deathSoundVolume);
 
         // Disable collider to prevent further damage
         _collider.enabled = false;
@@ -41,4 +44,5 @@ public class NpcHealth : MonoBehaviour
         // Disable other components or perform death animations
         Destroy(gameObject); // Optionally destroy the NPC object
     }
+
 }
