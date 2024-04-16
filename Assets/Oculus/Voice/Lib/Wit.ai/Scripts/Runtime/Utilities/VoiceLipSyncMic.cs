@@ -46,7 +46,7 @@ namespace Meta.WitAi.Lib
             // Get mic from audio buffer & set sample rate
             if (AudioBuffer.Instance?.MicInput is Mic mic)
             {
-                mic.AudioClipSampleRate = AudioSampleRate;
+                //mic.AudioClipSampleRate = AudioSampleRate;
             }
             else
             {
@@ -66,7 +66,7 @@ namespace Meta.WitAi.Lib
             // Get mic from audio buffer & get audio clip
             if (AudioBuffer.Instance?.MicInput is Mic mic)
             {
-                AudioSource.clip = mic.AudioClip;
+                //AudioSource.clip = mic.AudioClip;
             }
             buffer.Events.OnSampleReady += OnMicSampleReady;
             buffer.StartRecording(this);

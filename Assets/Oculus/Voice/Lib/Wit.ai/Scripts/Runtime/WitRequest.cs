@@ -357,7 +357,7 @@ namespace Meta.WitAi
             onPreSendRequest?.Invoke(ref uri, out headers);
 
             #if UNITY_WEBGL && !UNITY_EDITOR
-            StartUnityRequest(uri, headers);
+            //StartUnityRequest(uri, headers);
             #else
             #if UNITY_WEBGL && UNITY_EDITOR
             if (IsPost)
