@@ -9,7 +9,7 @@ public class QuestionTrigger : MonoBehaviour
 
     private void Awake()
     {
-        QuestionUI = GameObject.Find("UI");
+        //QuestionUI = GameObject.Find("UI");
     }
 
     private void OnTriggerEnter(Collider other)

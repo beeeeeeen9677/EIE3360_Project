@@ -10461,6 +10461,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 736796433021586004, guid: d5eb7298da41f734195a8afa09134937, type: 3}
+      propertyPath: QuestionUI
+      value: 
+      objectReference: {fileID: 1459618345}
+    - target: {fileID: 736796433021586004, guid: d5eb7298da41f734195a8afa09134937, type: 3}
       propertyPath: currentQuestionZone
       value: 3
       objectReference: {fileID: 0}
@@ -11505,6 +11509,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 736796433021586004, guid: d5eb7298da41f734195a8afa09134937, type: 3}
+      propertyPath: QuestionUI
+      value: 
+      objectReference: {fileID: 1459618345}
+    - target: {fileID: 736796433021586004, guid: d5eb7298da41f734195a8afa09134937, type: 3}
       propertyPath: currentQuestionZone
       value: 2
       objectReference: {fileID: 0}
@@ -12252,6 +12260,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 736796433021586004, guid: d5eb7298da41f734195a8afa09134937, type: 3}
+      propertyPath: QuestionUI
+      value: 
+      objectReference: {fileID: 1459618345}
     - target: {fileID: 736796433021586004, guid: d5eb7298da41f734195a8afa09134937, type: 3}
       propertyPath: currentQuestionZone
       value: 1
@@ -24623,6 +24635,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 736796433021586004, guid: d5eb7298da41f734195a8afa09134937, type: 3}
+      propertyPath: QuestionUI
+      value: 
+      objectReference: {fileID: 1459618345}
     - target: {fileID: 8857681943513886648, guid: d5eb7298da41f734195a8afa09134937, type: 3}
       propertyPath: m_Name
       value: TriggerZone0
